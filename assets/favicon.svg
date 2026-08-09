@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="AMPEDUP favicon">
+  <rect width="64" height="64" rx="12" fill="#0b2340"/>
+  <g transform="translate(6,6) scale(0.9)">
+    <path d="M20 2 L28 2 L22 18 L34 18 L14 46 L20 26 L12 26 Z" fill="#ffd54a" stroke="#ffb703" stroke-width="1"/>
+  </g>
+</svg>
