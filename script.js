@@ -54,27 +54,17 @@ document.addEventListener('DOMContentLoaded', function() {
         cleanPhone = '254' + cleanPhone;
       }
 
+      // BUSINESS WHATSAPP NUMBER (Kenya): replace with your preferred contact if needed
+      const BUSINESS_WHATSAPP = '254797608704'; // 0797608704 -> +254797608704
+
       // Create WhatsApp message
-      const message = `Hello AMPED UP ELECTRICARE SOLUTION,
-
-I would like a quotation for the following:
-
-*Name:* ${name}
-*Phone:* ${phone}
-*Service:* ${service}
-
-*Project Details:*
-${details}
-
-Please get back to me with a quote at your earliest convenience.
-
-Thank you!`;
+      const message = `Hello AMPED UP ELECTRICARE SOLUTION,\n\nI would like a quotation for the following:\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Service:* ${service}\n\n*Project Details:*\n${details}\n\nPlease get back to me with a quote at your earliest convenience.\n\nThank you!`;
 
       // Encode message for URL
       const encodedMessage = encodeURIComponent(message);
 
-      // Open WhatsApp
-      window.open(`https://wa.me/${cleanPhone}?text=${encodedMessage}`, '_blank');
+      // Open WhatsApp to BUSINESS number with the customer's details prefilled
+      window.open(`https://wa.me/${BUSINESS_WHATSAPP}?text=${encodedMessage}`, '_blank');
 
       // Reset form
       form.reset();
