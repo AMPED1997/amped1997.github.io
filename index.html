@@ -1,34 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .container {
-            text-align: center;
-            color: white;
-        }
-        h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AMPED UP ELECTRICARE SOLUTION</title>
+
+  <style>
+    :root{
+      --bg1:#0f172a;
+      --bg2:#0f3860;
+      --accent:#ffb703;
+      --muted:#e6eef9;
+      --card:#0b1a2b;
+      --radius:10px;
+    }
+
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--muted);-webkit-font-smoothing:antialiased}
+
+    .wrap{max-width:1000px;margin:2rem auto;padding:1.25rem;}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+    .brand{display:flex;align-items:center;gap:.75rem}
+    .logo{
+      width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#ff8a00);display:flex;align-items:center;justify-content:center;color:#04293a;font-weight:800;font-size:1.05rem;box-shadow:0 6px 18px rgba(0,0,0,.35)
+    }
+    h1{font-size:1.25rem;margin:0}
+    p.lead{margin:0;color:rgba(230,238,249,.9);opacity:.95}
+
+    main{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.25rem}
+    @media(min-width:880px){ main{grid-template-columns:1fr 420px} }
+
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:1.25rem;
+      box-shadow: 0 8px 30px rgba(2,6,23,.6);
+    }
+    .hero h2{margin:.25rem 0 .5rem 0;font-size:1.6rem;color:white}
+    .hero p{margin:0 0 1rem 0;line-height:1.45;color:rgba(230,238,249,.9)}
+
+    .services{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+    .card{flex:1 1 160px;background:var(--card);padding:0.9rem;border-radius:10px;min-width:140px}
+    .card h3{margin:.25rem 0;color:var(--accent);font-size:1rem}
+    .card p{margin:0;color:rgba(230,238,249,.85);font-size:.92rem}
+
+    .contact{
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+      border-radius:var(--radius);
+      padding:1rem;
+      box-shadow: 0 8px 24px rgba(2,6,23,.55);
+    }
+
+    label{display:block;font-size:.85rem;margin-bottom:.35rem;color:#dbeafe}
+    input[type="text"], input[type="tel"], textarea, select{
+      width:100%;padding:.6rem;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:transparent;color:var(--muted);outline:none;font-size:.95rem;box-sizing:border-box;
+    }
+    textarea{min-height:110px;resize:vertical}
+    .muted{font-size:.85rem;color:rgba(230,238,249,.75);margin-top:.5rem}
+
+    .btn{
+      display:inline-flex;align-items:center;gap:.5rem;padding:.6rem .9rem;border-radius:8px;background:var(--accent);color:#04293a;font-weight:700;border:none;cursor:pointer;margin-top:.5rem;
+    }
+
+    footer{margin-top:1rem;text-align:center;color:rgba(230,238,249,.7);font-size:.88rem}
+
+    .small-note{font-size:.82rem;color:rgba(230,238,249,.6);margin-top:.5rem}
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Page! 🎉</h1>
-        <p>Your GitHub Pages site is now live!</p>
-    </div>
-    <script src="script.js"></script>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">AU</div>
+        <div>
+          <h1>AMPED UP ELECTRICARE SOLUTION</h1>
+          <p class="lead">Electrical services • Installations • Repairs</p>
+        </div>
+      </div>
+      <div aria-hidden="true" style="text-align:right;color:rgba(230,238,249,.6)"><small>amped1997.github.io</small></div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <h2 id="hero-title">Trusted, Fast &amp; Professional Electrical Services</h2>
+        <p>We provide household and commercial electrical installations, maintenance, fault-finding, wiring, lighting solutions and solar setups. Fill the contact form to get a free quotation via WhatsApp.</p>
+
+        <div class="services" aria-hidden="false">
+          <div class="card">
+            <h3>Installations</h3>
+            <p>Wiring, sockets, circuit design and new builds.</p>
+          </div>
+          <div class="card">
+            <h3>Repairs</h3>
+            <p>Fault-finding, short fixes and emergency response.</p>
+          </div>
+          <div class="card">
+            <h3>Lighting</h3>
+            <p>Interior and exterior lighting, LED retrofits.</p>
+          </div>
+          <div class="card">
+            <h3>Solar</h3>
+            <p>Solar advice, panel installs & battery systems.</p>
+          </div>
+        </div>
+
+        <p class="small-note">We typically respond within 24 hours. Use the form to send details directly to WhatsApp.</p>
+      </section>
+
+      <aside class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" style="margin-top:0;color:var(--accent)">Get a Quote</h2>
+
+        <!-- The script.js in your repo expects ids: form, name, phone, service, details -->
+        <form id="form" novalidate>
+          <div style="margin-bottom:.75rem">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+          </div>
+
+          <div style="margin-bottom:.75rem">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="07XXXXXXXX or +2547XXXXXXXX" required />
+            <div class="muted">We will format for WhatsApp automatically (Kenya country code +254).</div>
+          </div>
+
+          <div style="margin-bottom:.75rem">
+            <label for="service">Service needed</label>
+            <select id="service" name="service" required>
+              <option value="">-- select one --</option>
+              <option>Electrical installation</option>
+              <option>Repair & fault finding</option>
+              <option>Lighting / LED upgrade</option>
+              <option>Solar / battery systems</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom:.75rem">
+            <label for="details">Project details</label>
+            <textarea id="details" name="details" placeholder="Describe the job, location, and any important notes" required></textarea>
+          </div>
+
+          <button type="submit" class="btn" aria-label="Send request via WhatsApp">Send via WhatsApp</button>
+        </form>
+
+        <p class="muted" style="margin-top:.75rem">By sending this form you agree to be contacted by AMPED UP ELECTRICARE SOLUTION.</p>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <span id="year">2026</span> AMPED UP ELECTRICARE SOLUTION</div>
+      <div style="margin-top:.35rem;color:rgba(230,238,249,.55)">Site powered by GitHub Pages — <small>amped1997.github.io</small></div>
+    </footer>
+  </div>
+
+  <!-- keep your existing JS file so the WhatsApp behavior and other features remain -->
+  <script src="script.js"></script>
 </body>
 </html>
