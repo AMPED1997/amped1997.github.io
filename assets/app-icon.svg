@@ -1,4 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#0A1628"/>
-  <path d="M288 56 144 282h94l-22 174 152-238h-98l18-162Z" fill="#F5B301"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Amped Up Electricare Solution</title>
+  <desc id="desc">A navy and electric-blue shield with a gold lightning bolt, electrical tools, and Amped Up Electricare Solution lettering.</desc>
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#092a50"/><stop offset=".55" stop-color="#06172d"/><stop offset="1" stop-color="#020b19"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff16a"/><stop offset=".45" stop-color="#ffb000"/><stop offset="1" stop-color="#ff6d00"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#59f2ff"/><stop offset=".55" stop-color="#009cff"/><stop offset="1" stop-color="#0052d6"/></linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <!-- Shield badge -->
+  <path d="M256 20 448 126v173c0 91-75 151-192 193C139 450 64 390 64 299V126L256 20Z" fill="#020914" stroke="url(#blue)" stroke-width="12"/>
+  <path d="M256 39 430 136v160c0 78-64 132-174 174C146 428 82 374 82 296V136L256 39Z" fill="url(#shield)" stroke="url(#gold)" stroke-width="7"/>
+  <path d="M99 150 256 59l157 91" fill="none" stroke="url(#blue)" stroke-width="9" stroke-linecap="round"/>
+  <!-- House / power window -->
+  <path d="m155 151 101-64 101 64" fill="none" stroke="#009dff" stroke-width="10" stroke-linejoin="round"/>
+  <rect x="226" y="117" width="60" height="45" rx="4" fill="url(#gold)" stroke="#07172a" stroke-width="5"/>
+  <path d="M256 118v43m-29-21h58" stroke="#09203b" stroke-width="5"/>
+  <!-- Tool shapes behind bolt -->
+  <g fill="none" stroke="#e9f5ff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M139 209c-5-25 16-43 40-35l-23 23 25 25 23-23c8 24-10 45-35 40l-61 72-20-20 72-61Z"/>
+    <path d="m325 204 48-36-14 40-84 83-21-21 83-84 40-14Z"/>
+  </g>
+  <!-- Lightning bolt -->
+  <path d="m274 139-72 118h49l-17 84 91-132h-53l30-70Z" fill="url(#gold)" stroke="#ff6900" stroke-width="8" stroke-linejoin="round" filter="url(#glow)"/>
+  <!-- Brand ribbon -->
+  <path d="M71 293 256 276l185 17v82l-185 20L71 375Z" fill="#03101f" stroke="url(#gold)" stroke-width="8"/>
+  <path d="M78 305 256 290l178 15" fill="none" stroke="url(#blue)" stroke-width="5"/>
+  <text x="256" y="346" text-anchor="middle" fill="#f7fbff" font-family="Arial, sans-serif" font-size="53" font-weight="900" letter-spacing="1">AMPED UP</text>
+  <path d="M119 373h274" stroke="#18bfff" stroke-width="4"/>
+  <text x="256" y="402" text-anchor="middle" fill="#ffb000" font-family="Arial, sans-serif" font-size="20" font-weight="900" letter-spacing="1.1">ELECTRICARE SOLUTION</text>
+  <!-- Spark accents -->
+  <g fill="#53f3ff" filter="url(#glow)"><path d="M91 188h8v28h-8zM81 198h28v8H81z"/><path d="M411 185h7v24h-7zM402 194h25v7h-25z"/></g>
+  <g fill="#ffca28"><circle cx="145" cy="411" r="5"/><circle cx="367" cy="411" r="5"/><circle cx="256" cy="432" r="6"/></g>
 </svg>
