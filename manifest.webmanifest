@@ -1,0 +1,19 @@
+{
+  "name": "Amped Up Electricare Solution",
+  "short_name": "Amped Up",
+  "description": "Electrical, solar and CCTV sales and installation in Meru, Kenya.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070b18",
+  "theme_color": "#0a1628",
+  "icons": [
+    {
+      "src": "./assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
